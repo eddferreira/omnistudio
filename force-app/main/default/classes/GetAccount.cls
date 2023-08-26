@@ -1,4 +1,4 @@
-public with sharing class GetAccount {
+public class GetAccount {
     public Account accountGet(Id idConta ) {
         List<Account> buscaConta = [Select Name, Id from Account where Id =: idConta];
         Account conta = new Account();
