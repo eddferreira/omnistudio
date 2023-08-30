@@ -1,4 +1,5 @@
 public class GetAccount {
+    //Busca conta com base no ID
     @AuraEnabled
     public Account accountGet(Id idConta ) {
         List<Account> buscaConta = [Select Name, Id from Account where Id =: idConta];
